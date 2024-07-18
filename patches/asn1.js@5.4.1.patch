@@ -1,0 +1,30 @@
+diff --git a/lib/asn1/api.js b/lib/asn1/api.js
+index 61e3eb27088f197c4efa28452fb1b1ec4bb9bbb0..c7041e23c8e54b51805ecc92c1583442e57f5e59 100644
+--- a/lib/asn1/api.js
++++ b/lib/asn1/api.js
+@@ -1,7 +1,7 @@
+ 'use strict';
+ 
+-const encoders = require('./encoders');
+-const decoders = require('./decoders');
++const encoders = require('./encoders/index.js');
++const decoders = require('./decoders/index.js');
+ const inherits = require('inherits');
+ 
+ const api = exports;
+diff --git a/lib/asn1.js b/lib/asn1.js
+index c7d70b8e3da238e9c9e05b4b1269b2e3c4fe7347..8150a2e6cfec0d584536a62fcb9f29f7b099eb38 100644
+--- a/lib/asn1.js
++++ b/lib/asn1.js
+@@ -5,7 +5,7 @@ const asn1 = exports;
+ asn1.bignum = require('bn.js');
+ 
+ asn1.define = require('./asn1/api').define;
+-asn1.base = require('./asn1/base');
+-asn1.constants = require('./asn1/constants');
+-asn1.decoders = require('./asn1/decoders');
+-asn1.encoders = require('./asn1/encoders');
++asn1.base = require('./asn1/base/index.js');
++asn1.constants = require('./asn1/constants/index.js');
++asn1.decoders = require('./asn1/decoders/index.js');
++asn1.encoders = require('./asn1/encoders/index.js');

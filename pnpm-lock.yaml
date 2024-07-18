@@ -7,6 +7,11 @@ settings:
 overrides:
   workerd: 1.20240614.0
 
+patchedDependencies:
+  asn1.js@5.4.1:
+    hash: 6nejitc7sptcymorh75vamegm4
+    path: patches/asn1.js@5.4.1.patch
+
 importers:
 
   .:
@@ -1400,7 +1405,7 @@ snapshots:
     dependencies:
       printable-characters: 1.0.42
 
-  asn1.js@5.4.1:
+  asn1.js@5.4.1(patch_hash=6nejitc7sptcymorh75vamegm4):
     dependencies:
       bn.js: 4.12.0
       inherits: 2.0.4
@@ -1648,7 +1653,7 @@ snapshots:
 
   jwk-to-pem@2.0.5:
     dependencies:
-      asn1.js: 5.4.1
+      asn1.js: 5.4.1(patch_hash=6nejitc7sptcymorh75vamegm4)
       elliptic: 6.5.6
       safe-buffer: 5.2.1
 

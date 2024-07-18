@@ -22,6 +22,9 @@
   "pnpm": {
     "overrides": {
       "workerd": "1.20240614.0"
+    },
+    "patchedDependencies": {
+      "asn1.js@5.4.1": "patches/asn1.js@5.4.1.patch"
     }
   }
 }

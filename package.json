@@ -1,0 +1,27 @@
+{
+  "name": "vitest-integration-resolution-bug",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cloudflare/vitest-pool-workers": "0.4.12",
+    "@cloudflare/workers-types": "4.20240712.0",
+    "get-jwks": "^9.0.2",
+    "vitest": "1.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "keywords": [
+    "typescript",
+    "javascript"
+  ],
+  "packageManager": "pnpm@9.5.0",
+  "pnpm": {
+    "overrides": {
+      "workerd": "1.20240614.0"
+    }
+  }
+}
